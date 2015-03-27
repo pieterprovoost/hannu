@@ -1,3 +1,7 @@
+drop schema if exists inout cascade;
+create schema inout;
+set search_path = inout;
+
 create or replace function positives (
 	inout a int,
 	inout b int,
